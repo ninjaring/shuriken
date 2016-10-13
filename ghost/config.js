@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'https://ninjaring.github.io/shuriken/ghost/',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -47,7 +47,7 @@ config = {
                  service: 'Gmail',
                  auth: {
                      user: 'ask.sonicbay@gmail.com', // mailgun username
-                     pass: 'gelombangfm'  // mailgun password
+                     pass: ''  // mailgun password
                  }
              }
          },
