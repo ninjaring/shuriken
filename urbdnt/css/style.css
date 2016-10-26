@@ -94,10 +94,7 @@ button {
 }
 
 #header-container {
-  padding: 15px 0 0;
   color: #fff;
-  height: 120px;
-  width: 940px;
   margin: 0 auto 0;
 }
 
@@ -394,7 +391,6 @@ button.size-box:active {
 }
 
 #footer-text-area {
-  width: 940px;
   margin: 0 auto 0;
 }
 
@@ -417,6 +413,11 @@ button.size-box:active {
 @media (min-width: 961px) {
   #mediamarker {
     background-color: green;
+  }
+  #header-container {
+    height: 120px;
+    width: 940px;
+    padding: 15px 0 0;
   }
   .wide-12 {
     width: 100%;
@@ -446,6 +447,17 @@ button.size-box:active {
   #mediamarker {
     background-color: red;
   }
+  #header-container {
+    min-height: 120px;
+    height: auto;
+    width: 100%;
+    max-width: 940px;
+    padding: 15px 10px 0;
+  }
+  #footer-text-area {
+    width: 100%;
+    max-width: 920px;
+  }
   .mid-12 {
     width: 100%;
   }
@@ -473,6 +485,10 @@ button.size-box:active {
 @media (min-width: 320px) and (max-width: 480px) {
   #mediamarker {
     background-color: blue;
+  }
+  #footer-text-area {
+    width: 100%;
+    max-width: 450px;
   }
   .narr-12 {
     width: 100%;
