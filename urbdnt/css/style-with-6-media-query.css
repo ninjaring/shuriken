@@ -1,0 +1,64 @@
+
+.row {
+  width: 100%;
+}
+
+
+#mediamarker {
+  width: 100px;
+  height: 5px;
+  position: relative;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+}
+
+/* super large devices onlye - yellow */
+@media (min-width: 1281px) {
+  #mediamarker {
+    background-color: yellow;
+  }
+}
+
+/* xtra large devices only - blue */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #mediamarker {
+    background-color: blue;
+  }
+}
+
+/* large devices only - green */
+@media (min-width: 961px) and (max-width: 1024px) {
+  #mediamarker {
+    background-color: green;
+  }
+}
+
+/* medium devices only - red */
+@media (min-width: 641px) and (max-width: 960px) {
+  #mediamarker {
+    background-color: red;
+  }
+}
+
+/* small devices only - black */
+@media (min-width: 481px) and (max-width: 640px) {
+  #mediamarker {
+    background-color: black;
+  }
+}
+
+/* xtra small devices only - gray */
+@media (min-width: 320px) and (max-width: 480px) {
+  #mediamarker {
+    background-color: gray;
+  }
+}
+
+/* super small devices only - orange */
+@media (max-width: 319px) {
+  #mediamarker {
+    background-color: orange;
+  }
+}

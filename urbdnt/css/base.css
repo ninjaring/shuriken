@@ -1,4 +1,14 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*
+ * part of normalize.css
+ * part of reset.css
+*/
+
+/**
+ * box-sizing reset
+ */
+* {
+  box-sizing: border-box;
+}
 
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -21,11 +31,16 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers (opinionated).
+ * 1. Remove the margin in all browsers (opinionated).
+ * 2. set background to white
+ * 3. set font size to 1em = 16px
  */
 
 body {
-  margin: 0;
+  margin: 0; /* 1 */
+  background-color: #FFF; /* 2 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /**
@@ -41,15 +56,23 @@ section {
   display: block;
 }
 
+/** span
+ */
+
+span {
+  display: inline-block;
+ }
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+ /*h1 {
+   font-size: 2em;
+   margin: 0.67em 0;
+ }*/
+
 
 /* Grouping content
    ========================================================================== */

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SINGLE ITEM PAGE</title>
+    <link rel="stylesheet" href="res/gidole/gidoleregular.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row">
+      <div id="mediamarker">
+      </div>
+    </div>
+
+    <header class="hdr">
+      <div class="cf" id="header-container">
+        <div class="row">
+          <div class="wide-7 mid-7 narr-12 column" id="logo-hdr">
+          <img src="" alt="" />
+        </div>
+          <div class="wide-4 mid-4 narr-12 column" id="contact-area">
+          <div class="row" id="phnumber">
+            <p>+12-345-678-123</p>
+          </div>
+          <div class="row" id="address">
+            <p>Taman Kuliner Condongcatur K-50 Yogyakarta</p>
+          </div>
+        </div>
+          <div class="wide-1 mid-1 narr-hide column" id="shortcut-area">
+          <div class="row cf">
+            <img class="btn icon24" id="gen-info" type="button" name="button"></img>
+          </div>
+          <div class="row cf">
+            <img class="btn icon24" id="instagram" type="button" name="button"></img>
+          </div>
+          <div class="row cf">
+            <img class="btn icon24" id="bag" type="button" name="button"></img>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-container">
+      <div id="item-container">
+        <div class="row cf" id="item-head">
+          <div class="wide-12 column">
+            <span class="item-title gd" id="single-item-title">
+              <h1>Nama Barang</h1>
+            </span>
+          </div>
+        </div>
+        <div class="row cf" id="item-body">
+          <div class="wide-8 column" id="gallery">
+            <div id="item-stage">
+              <div id="single-main-image">
+              </div>
+              <div id="stage-nav">
+                <button class="btn" id="sprev" type="button" onclick="prev()">
+                  <img class="svg icon48" src="res/icon/arrow-left.svg" alt="sebelumnya" />
+                </button>
+                <button class="btn" id="snext"
+                 type="button" onclick="next()">
+                   <img class="svg icon48" src="res/icon/arrow-right.svg" alt="selanjutnya" />
+                 </button>
+              </div>
+            </div>
+            <div id="thumbnails-set">
+              <span onclick="" id="tn1" class="btn single-thumbnail">
+              </span>
+              <span onclick="" id="tn2" class="btn single-thumbnail">
+              </span>
+              <span onclick="" id="tn3" class="btn single-thumbnail">
+              </span>
+              <span onclick="" id="tn4" class="btn single-thumbnail">
+              </span>
+              <span onclick="" id="tn5" class="btn single-thumbnail">
+              </span>
+            </div>
+          </div>
+          <div class="wide-4 column" id="item-info">
+            <div class="row cf gd" id="price">
+              <p>Rp 130.000<p>
+            </div>
+            <div class="row cf light" id="description">
+              <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p>
+            </div>
+            <div class="row cf" id="color">
+
+              <span class="label" id="color-label">
+                <p>Warna</p>
+              </span>
+              <span id="color-is">
+                <p>Hitam</p>
+              </span>
+            </div>
+            <div class="row cf " id="stock">
+              <span class="label" id="stock-label">
+                <p>Stok</p>
+              </span>
+              <span id="stock-is">
+                <p>Tersedia</p>
+              </span>
+            </div>
+            <div class="row cf " id="size">
+              <div class="column" id="size-label">
+                <p>Ukuran</p>
+              </div>
+              <div class="column notes">
+                <button class="btn italic" id="size-info" onclick=""><p>
+                  keterangan
+                </p></button>
+              </div>
+            </div>
+            <div class="row cf" id="size-pick">
+              <button class="btn size-box" onclick="">
+                <p>S</p></button>
+              <button class="btn size-box" onclick="">
+                <p>M</p></button>
+              <button class="btn size-box" onclick="">
+                <p>L</p></button>
+              <button class="btn size-box" onclick="">
+                <p>XL</p></button>
+            </div>
+            <div class="row cf notes">
+              <div id="extra-size-note">
+                <p>– catatan tambahan</p>
+              </div>
+            </div>
+            <div class="row cf">
+              <div class="column" id="action">
+                <button class="btn semibold" type="button" name="add-to-bag">
+                  <p>Tambahkan</p>
+                  <img class="icon30" src="/res/icon/basket-white.svg" onerror="this.onerror=null; this.src=''"/>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="item-nav-area">
+        <div class="row cf">
+          <div class="wide-12 column">
+            <div id="item-nav">
+                <button class="btn" id="previtem" type="button" name="button">
+                  <p>&larr; Previous Design</p>
+                </button>
+                <button class="btn" id="allitems" type="button" name="button">
+                  <p>,All Designs</p>
+                </button>
+                <button class="btn" id="nexitem" type="button" name="button">
+                  <p>Next Design &rarr;</p>
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="" id="page-footer">
+      <div class="row cf" id="white-space-below">
+      </div>
+      <div id="footer-text-area">
+        <div class="row cf">
+          <div class="wide-12 column">
+            <div id="copyright">
+              <p>
+                &copy; 2016 Urbandiningrat
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
