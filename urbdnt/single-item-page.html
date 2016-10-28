@@ -11,8 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
   </head>
   <body>
-    <div class="row">
-      <div id="mediamarker">
+    <div class="row" id="toosmall">
+      <div>
+        <p>
+          Sorry, your browser resolution is too small.<br>
+          Use another device, maybe?
+        </p>
       </div>
     </div>
 
@@ -68,7 +72,9 @@
         <div class="row cf" id="item-body">
           <div class="column wide-8 mida-8 midb-12 narr-12" id="gallery">
             <div id="item-stage">
-              <img id="single-main-image "src="" alt="showcase" />
+              <div id="imgwrapper">
+                <img class="cover" id="imgmain" src="/content/imgs/615x405c.png" alt="showcase" />
+              </div>
               <div id="stage-nav">
                 <button class="btn" id="sprev" type="button" onclick="prev()">
                   <img class="svg icon48" src="res/icon/arrow-left.svg" alt="sebelumnya" />
@@ -80,21 +86,29 @@
               </div>
             </div>
             <div id="thumbnails-set">
-              <button class="btn single-thumbnail" id="tn1" type="button" name="thumb">
-                <img src="" alt="thumb" />
-              </button>
-              <button class="btn single-thumbnail" id="tn2" type="button" name="thumb">
-                <img src="" alt="thumb" />
-              </button>
-              <button class="btn single-thumbnail" id="tn3" type="button" name="thumb">
-                <img src="" alt="thumb" />
-              </button>
-              <button class="btn single-thumbnail" id="tn4" type="button" name="thumb">
-                <img src="" alt="thumb" />
-              </button>
-              <button class="btn single-thumbnail" id="tn5" type="button" name="thumb">
-                <img src="" alt="thumb" />
-              </button>
+              <div id="thumbwrap">
+                <button class="btn single-thumbnail" id="tn1" type="button" name="thumb">
+                  <img src="content/imgs/thumb1.png" alt="thumb" />
+                </button>
+                <button class="btn single-thumbnail" id="tn2" type="button" name="thumb">
+                  <img src="content/imgs/thumb2.png" alt="thumb" />
+                </button>
+                <button class="btn single-thumbnail" id="tn3" type="button" name="thumb">
+                  <img src="content/imgs/thumb3.png" alt="thumb" />
+                </button>
+                <button class="btn single-thumbnail" id="tn4" type="button" name="thumb">
+                  <img src="content/imgs/thumb4.png" alt="thumb" />
+                </button>
+                <button class="btn single-thumbnail" id="tn5" type="button" name="thumb">
+                  <img src="content/imgs/thumb5.png" alt="thumb" />
+                </button>
+                <button class="btn single-thumbnail" id="tn6" type="button" name="thumb">
+                  <img src="content/imgs/thumb1.png" alt="thumb" />
+                </button>
+                <button class="btn single-thumbnail" id="tn7" type="button" name="thumb">
+                  <img src="content/imgs/thumb2.png" alt="thumb" />
+                </button>
+              </div>
             </div>
           </div>
           <div class="column wide-4 mida-4 midb-12 narr-12" id="item-info">
@@ -105,41 +119,47 @@
               <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p>
             </div>
             <div class="row cf" id="color">
-
-              <span class="label" id="color-label">
+              <div class="for column">
                 <p>Warna</p>
-              </span>
-              <span id="color-is">
+              </div>
+              <div class="tag column">
                 <p>Hitam</p>
-              </span>
+              </div>
             </div>
             <div class="row cf " id="stock">
-              <span class="label" id="stock-label">
+              <div class="for column">
                 <p>Stok</p>
-              </span>
-              <span id="stock-is">
+              </div>
+              <div class="tag column">
                 <p>Tersedia</p>
-              </span>
+              </div>
             </div>
             <div class="row cf " id="size">
-              <div class="column" id="size-label">
+              <div class="for column">
                 <p>Ukuran</p>
               </div>
               <div class="column notes">
-                <button class="btn italic" id="size-info" onclick=""><p>
-                  keterangan
-                </p></button>
+                <button class="btn italic" id="size-info" onclick="">
+                  keterangan</button>
               </div>
             </div>
             <div class="row cf" id="size-pick">
               <button class="btn size-box" onclick="">
-                <p>S</p></button>
+                S</button>
               <button class="btn size-box" onclick="">
-                <p>M</p></button>
+                M</button>
               <button class="btn size-box" onclick="">
-                <p>L</p></button>
+                L</button>
               <button class="btn size-box" onclick="">
-                <p>XL</p></button>
+                XL</button>
+            </div>
+            <div class="row cf" id="amounts">
+              <div class="for column">
+                <p>Jumlah</p>
+              </div>
+              <div class="tag column">
+                <input id="amt-num" type="number" min="1" max="99" name="jumlah" placeholder="1++" autocomplete="off" value="" required>
+              </div>
             </div>
             <div class="row cf notes">
               <div id="extra-size-note">

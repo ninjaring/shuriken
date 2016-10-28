@@ -157,9 +157,39 @@ img[alt]:not(.icon) {
   padding-right: 3px;
 }
 
-#item-stage {
-  overflow: hidden;
+div#item-stage {
   position: relative;
+}
+
+#item-stage > div {
+  width: 100%;
+  height: 100%
+}
+
+div#imgwrapper {
+  overflow: hidden;
+}
+div#stage-nav {
+  position: absolute;
+  top: 40%;
+}
+
+img#imgmain {
+  width: inherit;
+  height: inherit;
+  /*object-position: center;*/
+  /*display: block;*/
+  /*position: absolute;*/
+  /*top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;*/
+}
+.cover {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 #stage-nav button {
@@ -167,7 +197,6 @@ img[alt]:not(.icon) {
   width: 64px;
   height: 64px;
   position: absolute;
-  top: 40%;
   border: none;
   background: transparent;
   overflow: hidden;
@@ -197,15 +226,30 @@ button#snext {
   right: 0;
 }
 
-#thumbnails-set {
+
+div#thumbnails-set {
   height: 72px;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+div#thumbwrap {
+  width: 960px;
+  background-color: #fff;
+}
+
+#thumbwrap button {
+  display: inline;
 }
 
 button.single-thumbnail {
-  background-color: transparent;
+  display: inline-block;
+  background: none;
   outline: none;
   border: none;
   float: left;
@@ -225,7 +269,7 @@ button.single-thumbnail {
   border: 1px outset #000;
 }
 
-.label {
+div.for {
   width: 60px;
 }
 
@@ -243,7 +287,7 @@ button.single-thumbnail {
   text-transform: uppercase;
 }
 
-#size {
+div#size {
   margin-top: 1.5em;
 }
 
@@ -254,7 +298,7 @@ button.single-thumbnail {
 }
 
 button#size-info {
-  margin-left: 4em;
+  margin-left: 2em;
   border: none;
   background-color: transparent;
 }
@@ -285,9 +329,6 @@ button.size-box {
   -webkit-border-radius: 3px;
   color: #000;
   text-align: center;
-}
-
-button.size-box p {
   font-size: 1.5em;
   line-height: 1;
 }
@@ -304,6 +345,10 @@ button.size-box:active {
   cursor: pointer;
   color: #fff;
   background-color: #000;
+}
+
+#amounts input {
+  width: 4em;
 }
 
 #action {
@@ -399,16 +444,6 @@ div.navwrap {
   color: rgba(0, 0, 0, 0.8);
 }
 
-#mediamarker {
-  width: 20%;
-  height: 5px;
-  position: absolute;
-  top: 0px;
-  margin-left: 40%;
-  margin-right: auto;
-  display: none;
-}
-
 .wide-disp {
   display: none;
 }
@@ -443,7 +478,7 @@ div.navwrap {
     height: 80px;
     width: 410px;
   }
-  #item-stage img {
+  div#item-stage {
     width: 615px;
     height: 405px;
   }
@@ -532,7 +567,7 @@ div.navwrap {
     max-width: 410px;
     width: 75%;
   }
-  #item-stage img {
+  div#item-stage {
     max-width: 615px;
     width: 100%;
     height: 405px;
@@ -598,7 +633,7 @@ div.navwrap {
   #address p {
     text-align: left;
   }
-  #item-stage img {
+  div#item-stage {
     width: 100%;
     max-width: 640px;
     height: 405px;
@@ -654,7 +689,7 @@ div.navwrap {
   #contact-area p {
     text-align: center;
   }
-  #item-stage img {
+  div#item-stage {
     width: 100%;
     height: 405px;
   }
@@ -693,5 +728,20 @@ div.navwrap {
   }
   .narr-disp {
     display: block;
+  }
+}
+
+#toosmall div {
+  margin: 10px !important;
+  display: none !important;
+}
+
+/* tiny devices only */
+@media (max-width: 319px) {
+  .container {
+    display: none;
+  }
+  #toosmall div {
+    display: block !important;
   }
 }
