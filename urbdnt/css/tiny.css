@@ -1,0 +1,10 @@
+ /*tiny devices only */
+@media (max-width: 319px) {
+  div:not(#toosmall) {
+    display: none;
+  }
+  div#toosmall {
+    display: block !important;
+    margin: 10px;
+  }
+}

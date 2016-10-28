@@ -1,0 +1,13 @@
+
+/*FOOTER*/
+
+#ftr .container {
+  padding-top: 100px;
+  padding-bottom: 5px;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.8);
+}

@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SINGLE ITEM PAGE</title>
     <link rel="stylesheet" href="res/gidole/gidoleregular.css" media="screen" title="no title">
-    <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/base.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <link rel="stylesheet" href="css/tiny.css" media="screen">
+    <link rel="stylesheet" href="css/header.css" media="screen">
+    <link rel="stylesheet" href="css/footer.css" media="screen">
+    <link rel="stylesheet" href="css/single.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
   </head>
   <body>
     <div class="row" id="toosmall">
-      <div>
-        <p>
-          Sorry, your browser resolution is too small.<br>
-          Use another device, maybe?
-        </p>
-      </div>
+      <p>
+        Sorry, your browser resolution is too small.<br>
+        Use another device, maybe?
+      </p>
     </div>
 
     <header id="hdr">
@@ -30,7 +32,7 @@
             <div class="row">
               <div class="column wide-12 mida-12 midb-6 narr-12" id="phnumber">
                 <p><a href="tel:+62123456789">
-                  &#43;12&#150;345&#150;678&#150;123
+                  &#43;12&#8210;345&#8210;678&#8210;123
                 </a></p>
               </div>
               <div class="column wide-12 mida-12 midb-6 narr-12" id="address">
@@ -41,18 +43,18 @@
           </div>
           <div class="wide-1 mida-1 midb-hide narr-hide column" id="shortcut-area">
             <div class="row cf">
-              <a href="#">
-                <img class="btn icon24" id="gen-info" type="button" name="button"></img>
+              <a class="icon" id="info" href="#">
+                <img class="icon icon24" src="" alt="info" />
               </a>
             </div>
             <div class="row cf">
-              <a href="#">
-                <img class="btn icon24" id="instagram" type="button" name="button"></img>
+              <a class="icon" id="instagram" href="#">
+                <img class="icon icon24" src="" alt="ig" />
               </a>
             </div>
             <div class="row cf">
-              <a href="#">
-                <img class="btn icon24" id="bag" type="button" name="button"></img>
+              <a class="icon" id="bag" href="#">
+                <img class="icon icon24" src="" alt="bag" />
               </a>
             </div>
           </div>
@@ -63,17 +65,15 @@
     <div class="wrapper">
       <div class="container" id="product">
         <div class="row cf" id="item-head">
-          <div class="column wide-12 mid-12 narr-12">
-            <span class="item-title gd" id="single-item-title">
-              <h1>Nama Barang</h1>
-            </span>
+          <div class="column gd wide-12 mid-12 narr-12">
+            <h1>Nama Barang</h1>
           </div>
         </div>
         <div class="row cf" id="item-body">
           <div class="column wide-8 mida-8 midb-12 narr-12" id="gallery">
             <div id="item-stage">
               <div id="imgwrapper">
-                <img class="cover" id="imgmain" src="/content/imgs/615x405c.png" alt="showcase" />
+                <img class="cover" id="imgmain" src="content/imgs/615x405c.png" alt="showcase" />
               </div>
               <div id="stage-nav">
                 <button class="btn" id="sprev" type="button" onclick="prev()">
@@ -168,8 +168,7 @@
             </div>
             <div class="row cf">
               <div id="action">
-                <button class="btn semibold" type="button" name="add-to-bag">
-                  <p>Taruh</p>
+                <button class="btn semibold" type="button" name="add-to-bag">Taruh
                   <img class="icon icon30" src="/res/icon/basket-white.svg" alt="bag"/>
                 </button>
               </div>
@@ -182,11 +181,11 @@
         <div class="row cf">
           <div class="column wide-12 mid-12 narr-12 navwrap">
             <button class="btn" id="previtem" type="button" name="button">
-              <p>&larr; Previous Design</p></button>
+              &larr; Previous Design</button>
             <button class="btn narr-hide" id="allitems" type="button" name="button">
-              <p>All Designs</p></button>
+              All Designs</button>
             <button class="btn" id="nexitem" type="button" name="button">
-              <p>Next Design &rarr;</p></button>
+              Next Design &rarr;</button>
           </div>
         </div>
         <div class="row cf">
