@@ -17,6 +17,61 @@ a {
   color: inherit;
 }
 
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  padding: 0 10px 0;
+  margin: 0 auto 0;
+}
+
+.row {
+  width: 100%;
+}
+
+.column {
+  float: left;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.btn {
+}
+
+button {
+  overflow: hidden;
+}
+
+img[alt]:not(.icon) {
+  font: inherit;
+}
+
+.cover {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contain {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 .italic {
   font-style: italic;
 }
@@ -65,45 +120,6 @@ a {
 .icon18 {
   height: 18px;
   width: 18px;
-}
-
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  *zoom: 1;
-}
-
-.row {
-  width: 100%;
-}
-
-.column {
-  float: left;
-}
-
-.btn {
-}
-
-button {
-  overflow: hidden;
-}
-
-img[alt]:not(.icon) {
-  font: inherit;
-  opacity: 0.8;
-}
-
-.container {
-  padding: 0 10px 0;
-  margin: 0 auto 0;
 }
 
 .wide-disp {

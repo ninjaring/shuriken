@@ -1,0 +1,27 @@
+/* for content of all items page */
+#all-head .column h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+
+#all-items div.column {
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+div.imgwrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+img.imgall {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+}
