@@ -19,7 +19,6 @@ a {
   color: inherit;
 }
 
-
 .italic {
   font-style: italic;
 }
@@ -75,6 +74,17 @@ div.imgwrapper {
   overflow: hidden;
 }
 
+.bgimg img {
+  user-select: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
+  z-index: -1;
+}
+
 .coverbig {
   object-fit: cover;
   object-position: center;
@@ -103,12 +113,12 @@ div.imgwrapper {
 }
 
 .delay9s {
-  animation-delay: 12s;
+  animation-delay: 9s;
 }
 
 @keyframes panningDownUp {
   0% {
-    transform: translate3d(-12%,-30%,0);
+    transform: translate3d(-12%,-15%,0);
   }
   40% {
     transform: translate3d(-12%,-50%,0);
@@ -117,7 +127,7 @@ div.imgwrapper {
     transform: translate3d(-12%,-50%,0);
   }
   100% {
-    transform: translate3d(-12%,-30%,0);
+    transform: translate3d(-12%,-15%,0);
   }
 }
 
@@ -208,20 +218,21 @@ div#focusbox {
   left: 50%;
   width: 90%;
   height: 90%;
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 600px;
+  max-height: 330px;
   background-color: #111;
   text-align: center;
-  padding: 10px;
+  padding: 10px 25px;
   color: #fff;
   -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.5);
   box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.5);
+  z-index: 3;
 }
 
 #focusbox p,
 #focusbox h1 {
-  font-family: Gidole;
+  font-family: 'gidoleregular', helvetica, arial, sans-serif;
   margin: 0;
 }
 
@@ -237,26 +248,36 @@ div#focusbox div:first-child {
 div#focusbox div:nth-child(2) h1 {
   font-size: 1.2em;
   margin: 5px auto 10px;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+}
+
+div#focusbox div:last-child {
+  position: absolute;
+  bottom: 0;
 }
 
 button#gotoshop {
   overflow: hidden;
-  width: 200px;
-  height: 50px;
-  margin: 10px auto 10px;
-  border-radius: 5px;
+  min-width: 150px;
+  padding: 15px 20px;
+  margin: 10px auto 30px;
+  border-radius: 0;
   text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  border: 1px solid white;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  background-color: #fff;
+  font-size: 1.2em;
+  color: #000;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 button#gotoshop:hover {
   cursor: pointer;
   background-color: #fff;
   color: #000;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  border-radius: 3em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
