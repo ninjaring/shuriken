@@ -90,30 +90,31 @@ div#thumbwrap {
   width: 600px;
 }
 
-button.single-thumbnail {
+img.single-thumbnail {
   display: inline-block;
   background: none;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   float: left;
   margin-right: 12px;
+  margin-bottom: 12px;
   width: 64px;
   height: 64px;
   padding: 0;
 }
 
-.single-thumbnail:hover {
+img.single-thumbnail:hover {
   cursor: pointer;
 }
 
-.single-thumbnail:hover,
-.single-thumbnail:active,
-.single-thumbnail:focus {
+img.single-thumbnail:hover,
+img.single-thumbnail:active,
+img.single-thumbnail:focus {
   border: 1px solid #000;
 }
 
-div.for {
-  width: 60px;
+div.label:not(#sizeLabel) {
+  width: 100px;
 }
 
 #item-info .row {
@@ -130,8 +131,12 @@ div.for {
   text-transform: uppercase;
 }
 
-div#size {
+div#orderArea {
   margin-top: 1.5em;
+}
+
+#orderArea .column {
+  margin-bottom: 1em;
 }
 
 .notes {
@@ -140,23 +145,10 @@ div#size {
   bottom: -0.25em;
 }
 
-button#size-info {
-  margin-left: 2em;
-  border: none;
-  background-color: transparent;
-}
-
-button#size-info:hover {
+a#sizeInfo:hover,
+a#sizeInfo:active {
   cursor: pointer;
   text-decoration: underline;
-}
-
-button#size-info:focus {
-  outline: none;
-}
-
-button#size-info:active {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 button.size-box {
@@ -190,8 +182,12 @@ button.size-box:active {
   background-color: #000;
 }
 
-#amounts input {
+#qValue input {
   width: 4em;
+}
+
+div #alertText {
+  height: 40px;
 }
 
 div#action {
@@ -234,8 +230,8 @@ div#action {
 
 /* CONTENT BELOW */
 
-.container#itemnav {
-  padding-top: 100px;
+div#belowSpace {
+  height: 100px;
 }
 
 div.navwrap {

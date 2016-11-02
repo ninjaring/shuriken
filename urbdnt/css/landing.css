@@ -1,0 +1,262 @@
+/* GENERAL RULE */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+  background-color: white;
+}
+
+body p {
+  white-space: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.italic {
+  font-style: italic;
+}
+
+.light {
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.gd {
+  font-family: 'gidoleregular', helvetica, arial, sans-serif;
+}
+
+div.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+div.container {
+  width: 100%;
+  height: 100%;
+}
+
+div.row {
+  width: 100%;
+}
+
+div.cell {
+  float: left;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+div.imgwrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.coverbig {
+  object-fit: cover;
+  object-position: center;
+  height: 200%;
+  width: 200%;
+}
+
+.desaturate {
+  filter: grayscale(100%);
+  -webkit-transition: all 8s ease;
+  transition: all 2s ease;
+}
+
+.desaturate:hover {
+  filter: grayscale(0%);
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
+}
+
+.delay3s {
+  animation-delay: 3s;
+}
+
+.delay6s {
+  animation-delay: 6s;
+}
+
+.delay9s {
+  animation-delay: 12s;
+}
+
+@keyframes panningDownUp {
+  0% {
+    transform: translate3d(-12%,-30%,0);
+  }
+  40% {
+    transform: translate3d(-12%,-50%,0);
+  }
+  60% {
+    transform: translate3d(-12%,-50%,0);
+  }
+  100% {
+    transform: translate3d(-12%,-30%,0);
+  }
+}
+
+.panningDownUp {
+  -webkit-animation-name: panning;
+  animation-name: panningDownUp;
+  -webkit-animation-duration: 1-s;
+  animation-duration: 30s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
+}
+
+@keyframes panningLeftRight {
+  0% {
+    transform: translate3d(0%,-25%,0);
+  }
+  40% {
+    transform: translate3d(-50%,-25%,0);
+  }
+  60% {
+    transform: translate3d(-50%,-25%,0);
+  }
+  100% {
+    transform: translate3d(0%,-25%,0);
+  }
+}
+
+.panningLeftRight {
+  -webkit-animation-name: panning;
+  animation-name: panningLeftRight;
+  -webkit-animation-duration: 1-s;
+  animation-duration: 30s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%,0)
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fadeInUp {
+  display: block;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+div.c6x6 {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+div#focusbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  max-width: 400px;
+  max-height: 300px;
+  background-color: #111;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.5);
+}
+
+#focusbox p,
+#focusbox h1 {
+  font-family: Gidole;
+  margin: 0;
+}
+
+div#focusbox div:first-child {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 15px auto 20px;
+  line-height: 1;
+}
+
+div#focusbox div:nth-child(2) h1 {
+  font-size: 1.2em;
+  margin: 5px auto 10px;
+}
+
+button#gotoshop {
+  overflow: hidden;
+  width: 200px;
+  height: 50px;
+  margin: 10px auto 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button#gotoshop:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}

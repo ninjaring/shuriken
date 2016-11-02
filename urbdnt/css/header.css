@@ -24,7 +24,7 @@
   border: none;
 }
 
-#shortcut-area img {
+#shortcut img {
   float: right;
   margin-bottom: 0.5em;
 }
@@ -75,7 +75,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  #contact-area p {
+  #contact p {
     padding: 0 10px 0;
   }
   #phnumber p {
@@ -100,7 +100,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  #contact-area p {
+  #contact p {
     text-align: center;
   }
 }

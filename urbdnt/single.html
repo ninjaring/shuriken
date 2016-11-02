@@ -4,40 +4,29 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SINGLE ITEM PAGE</title>
+    <title>@title, @name</title>
     <link rel="stylesheet" href="res/gidole/gidoleregular.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/base.css" media="screen">
     <link rel="stylesheet" href="css/main.css" media="screen">
-    <link rel="stylesheet" href="css/tiny.css" media="screen">
     <link rel="stylesheet" href="css/header.css" media="screen">
     <link rel="stylesheet" href="css/footer.css" media="screen">
     <link rel="stylesheet" href="css/single.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
   </head>
   <body>
-    <div class="row" id="toosmall">
-      <p>
-        Sorry, your browser resolution is too small.<br>
-        Use another device, maybe?
-      </p>
-    </div>
-
     <header id="hdr">
       <div class="container">
         <div class="row cf">
           <div class="wide-7 mida-7 midb-12 narr-12 column" id="logo-hdr">
-            <img src="" alt="urbandiningrat"/>
+            <img src="" alt="@name"/>
           </div>
-          <div class="wide-4 mida-4 midb-12 narr-12 column" id="contact-area">
+          <div class="wide-4 mida-4 midb-12 narr-12 column" id="contact">
             <div class="row">
-              <div class="column wide-12 mida-12 midb-6 narr-12" id="phnumber">
-                <p><a href="tel:+62123456789">
-                  &#43;12&#8210;345&#8210;678&#8210;123
-                </a></p>
+              <div class="column wide-12 mida-12 midb-6 narr-12" id="phone">
+                <p><a href="tel:@phone">@phone</a></p>
               </div>
-              <div class="column wide-12 mida-12 midb-6 narr-12" id="address">
-                <p><a href="#">Taman Kuliner Condongcatur K&#8209;50 Yogyakarta
-                </a></p>
+              <div class="column wide-12 mida-12 midb-6 narr-12" id="addr">
+                <p><a href="@addrLink">@addr</a></p>
               </div>
             </div>
           </div>
@@ -48,7 +37,7 @@
               </a>
             </div>
             <div class="row cf">
-              <a class="icon" id="instagram" href="#">
+              <a class="icon" id="instagram" href="@igLink">
                 <img class="icon icon24" src="" alt="ig" />
               </a>
             </div>
@@ -66,14 +55,14 @@
       <div class="container" id="product">
         <div class="row cf" id="item-head">
           <div class="column gd wide-12 mid-12 narr-12">
-            <h1>Nama Barang</h1>
+            <h1>@productName</h1>
           </div>
         </div>
         <div class="row cf" id="item-body">
           <div class="column wide-8 mida-8 midb-12 narr-12" id="gallery">
             <div id="item-stage">
               <div class="imgwrapper">
-                <img class="cover" id="imgmain" src="content/imgs/615x405c.png" alt="showcase" />
+                <img class="cover" id="imgmain" src="content/imgs/615x405c.png" alt="@productName" />
               </div>
               <div id="stage-nav">
                 <button class="btn" id="sprev" type="button" onclick="prev()">
@@ -87,89 +76,72 @@
             </div>
             <div id="thumbnails-set">
               <div id="thumbwrap">
-                <button class="btn single-thumbnail" id="tn1" type="button" name="thumb">
-                  <img src="content/imgs/thumb1.png" alt="thumb" />
-                </button>
-                <button class="btn single-thumbnail" id="tn2" type="button" name="thumb">
-                  <img src="content/imgs/thumb2.png" alt="thumb" />
-                </button>
-                <button class="btn single-thumbnail" id="tn3" type="button" name="thumb">
-                  <img src="content/imgs/thumb3.png" alt="thumb" />
-                </button>
-                <button class="btn single-thumbnail" id="tn4" type="button" name="thumb">
-                  <img src="content/imgs/thumb4.png" alt="thumb" />
-                </button>
-                <button class="btn single-thumbnail" id="tn5" type="button" name="thumb">
-                  <img src="content/imgs/thumb5.png" alt="thumb" />
-                </button>
-                <button class="btn single-thumbnail" id="tn6" type="button" name="thumb">
-                  <img src="content/imgs/thumb1.png" alt="thumb" />
-                </button>
-                <button class="btn single-thumbnail" id="tn7" type="button" name="thumb">
-                  <img src="content/imgs/thumb2.png" alt="thumb" />
-                </button>
+                <img class="single-thumbnail" id="tn1" src="content/imgs/thumb1.png" alt="thumb" />
+                <img class="single-thumbnail" id="tn2" src="content/imgs/thumb2.png" alt="thumb" />
+                <img class="single-thumbnail" id="tn3" src="content/imgs/thumb3.png" alt="thumb" />
+                <img class="single-thumbnail" id="tn4" src="content/imgs/thumb4.png" alt="thumb" />
+                <img class="single-thumbnail" id="tn5" src="content/imgs/thumb5.png" alt="thumb" />
               </div>
             </div>
           </div>
           <div class="column wide-4 mida-4 midb-12 narr-12" id="item-info">
             <div class="row cf gd" id="price">
-              <p>Rp 130.000<p>
+              <p>@price<p>
             </div>
             <div class="row cf light" id="description">
-              <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p>
+              <p>@description</p>
             </div>
-            <div class="row cf" id="color">
-              <div class="for column">
-                <p>Warna</p>
+            <div class="row cf">
+              <div class="label column" id="colorLabel">
+                <p>@colorLabel</p>
               </div>
-              <div class="tag column">
-                <p>Hitam</p>
-              </div>
-            </div>
-            <div class="row cf " id="stock">
-              <div class="for column">
-                <p>Stok</p>
-              </div>
-              <div class="tag column">
-                <p>Tersedia</p>
-              </div>
-            </div>
-            <div class="row cf " id="size">
-              <div class="for column">
-                <p>Ukuran</p>
-              </div>
-              <div class="column notes">
-                <button class="btn italic" id="size-info" onclick="">
-                  keterangan</button>
-              </div>
-            </div>
-            <div class="row cf" id="size-pick">
-              <button class="btn size-box" onclick="">
-                S</button>
-              <button class="btn size-box" onclick="">
-                M</button>
-              <button class="btn size-box" onclick="">
-                L</button>
-              <button class="btn size-box" onclick="">
-                XL</button>
-            </div>
-            <div class="row cf" id="amounts">
-              <div class="for column">
-                <p>Jumlah</p>
-              </div>
-              <div class="tag column">
-                <input id="amt-num" type="number" min="1" max="99" name="jumlah" placeholder="1++" autocomplete="off" value="" required>
-              </div>
-            </div>
-            <div class="row cf notes">
-              <div id="extra-size-note">
-                <p>– catatan tambahan</p>
+              <div class="value column" id="colorValue">
+                <p>@colorValue</p>
               </div>
             </div>
             <div class="row cf">
-              <div id="action">
-                <button class="btn semibold" type="button" name="add-to-bag">Taruh
-                  <img class="icon icon30" src="/res/icon/basket-white.svg" alt="bag"/>
+              <div class="label column" id="stockLabel">
+                <p>@stockLabel</p>
+              </div>
+              <div class="value column" id="stockValue">
+                <p>@stockValue</p>
+              </div>
+            </div>
+            <div class="row cf" id="orderArea">
+              <div class="label column wide-6 mid-6 narr-6" id="sizeLabel">
+                <p>@sizeLabel</p>
+              </div>
+              <div class="column notes wide-6 mid-6 narr-6">
+                <a id="sizeInfo"
+                 href="">@sizeInfo</a>
+              </div>
+
+              <div class="column wide-12 mid-12 narr-12" id="sizePick">
+                <button class="btn size-box" onclick="">
+                  S</button>
+                <button class="btn size-box" onclick="">
+                  M</button>
+                <button class="btn size-box" onclick="">
+                  L</button>
+                <button class="btn size-box" onclick="">
+                  XL</button>
+              </div>
+              <div class="label column" id="qLabel">
+                <p>@qLabel</p>
+              </div>
+              <div class="value column" id="qValue">
+                <input type="number" min="1" max="99" name="jumlah" placeholder="1++" autocomplete="off" value="" required>
+              </div>
+            </div>
+            <div class="row cf notes">
+              <p id="xtraSizeNotes">– @xtraSizeNotes</p>
+            </div>
+            <div class="row cf">
+              <div class="column wide-12 mid-12 narr-12">
+                <p id="alertText"></p>
+              </div>
+              <div class="column wide-12 mid-12 narr-12" id="action">
+                <button class="btn semibold" type="button" name="add-to-bag">@actionText
                 </button>
               </div>
             </div>
@@ -179,19 +151,21 @@
 
       <div class="container" id="itemnav">
         <div class="row cf">
+          <div class="column wide-12 mid-12 narr-12" id="belowSpace">
+          </div>
           <div class="column wide-12 mid-12 narr-12 navwrap">
             <button class="btn" id="previtem" type="button" name="button">
-              &larr; Previous Design</button>
+              &larr; @PrevBtnText</button>
             <button class="btn narr-hide" id="allitems" type="button" name="button">
-              All Designs</button>
+              @HomeBtnText</button>
             <button class="btn" id="nexitem" type="button" name="button">
-              Next Design &rarr;</button>
+              @NextBtnText &rarr;</button>
           </div>
         </div>
         <div class="row cf">
           <div class="column wide-12 mid-12 narr-12 navwrap">
             <button class="btn wide-hide mid-hide" id="allitemsplus" type="button" name="button">
-              All Designs</button>
+              @HomeBtnText</button>
           </div>
         </div>
       </div>
@@ -202,9 +176,7 @@
         <div class="row cf">
           <div class="column wide-12 mid-12 narr-12">
             <div id="copyright">
-              <p>
-                &copy; 2016 Urbandiningrat
-              </p>
+              <p>&copy; @current_year @name</p>
             </div>
           </div>
         </div>
