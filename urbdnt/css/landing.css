@@ -1,5 +1,6 @@
 /* GENERAL RULE */
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -116,6 +117,21 @@ div.imgwrapper {
   animation-delay: 9s;
 }
 
+@-webkit-keyframes panningDownUp {
+  0% {
+    -webkit-transform: translate3d(-12%,-15%,0);
+  }
+  40% {
+    -webkit-transform: translate3d(-12%,-50%,0);
+  }
+  60% {
+    -webkit-transform: translate3d(-12%,-50%,0);
+  }
+  100% {
+    -webkit-transform: translate3d(-12%,-15%,0);
+  }
+}
+
 @keyframes panningDownUp {
   0% {
     transform: translate3d(-12%,-15%,0);
@@ -143,6 +159,21 @@ div.imgwrapper {
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 4s ease;
   transition: all 4s ease;
+}
+
+@-webkit-keyframes panningLeftRight {
+  0% {
+    -webkit-transform: translate3d(0%,-25%,0);
+  }
+  40% {
+    -webkit-transform: translate3d(-50%,-25%,0);
+  }
+  60% {
+    -webkit-transform: translate3d(-50%,-25%,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0%,-25%,0);
+  }
 }
 
 @keyframes panningLeftRight {
@@ -203,7 +234,7 @@ div.imgwrapper {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 div.c6x6 {
@@ -217,9 +248,9 @@ div#focusbox {
   top: 50%;
   left: 50%;
   width: 90%;
-  height: 90%;
   max-width: 600px;
-  max-height: 330px;
+  min-height: 300px;
+  max-height: 90%;
   background-color: #111;
   text-align: center;
   padding: 10px 25px;
@@ -252,32 +283,23 @@ div#focusbox div:nth-child(2) h1 {
   letter-spacing: 1px;
 }
 
-div#focusbox div:last-child {
-  position: absolute;
-  bottom: 0;
-}
-
-button#gotoshop {
-  overflow: hidden;
+.btn#gotoshop {
+  display: inline-block;
   min-width: 150px;
-  padding: 15px 20px;
-  margin: 10px auto 30px;
-  border-radius: 0;
-  text-transform: uppercase;
-  background-color: #fff;
-  font-size: 1.2em;
-  color: #000;
-  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 30px auto 20px;
   border: 1px solid #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  touch-action: manipulation;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-button#gotoshop:hover {
+.btn#gotoshop:hover {
   cursor: pointer;
   background-color: #fff;
   color: #000;
-  border-radius: 3em;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }

@@ -1,5 +1,10 @@
 /* GENERAL RULE */
-body {
+body,
+button,
+input,
+optgroup,
+select,
+textarea  {
   font-size: 1em;
   font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
 }
@@ -20,6 +25,11 @@ a {
 .container {
   padding: 0 10px 0;
   margin: 0 auto 0;
+}
+
+.containerfull {
+  padding: 0;
+  margin: 0;
 }
 
 .row {
@@ -83,6 +93,7 @@ img[alt]:not(.icon) {
 
 .gd {
   font-family: 'gidoleregular', helvetica, arial, sans-serif;
+  letter-spacing: 0.025em;
 }
 
 .black {
@@ -130,6 +141,9 @@ img[alt]:not(.icon) {
   .wide-12 {
     width: 100%;
   }
+  .wide-9 {
+    width: 75%;
+  }
   .wide-8 {
     width: 66.67%;
   }
@@ -144,6 +158,9 @@ img[alt]:not(.icon) {
   }
   .wide-4 {
     width: 33.33%;
+  }
+  .wide-3 {
+    width: 25%;
   }
   .wide-1 {
     width: 8.33%;
@@ -169,6 +186,9 @@ img[alt]:not(.icon) {
   .mid-12 {
     width: 100%;
   }
+  .mid-9 {
+    width: 75%;
+  }
   .mid-8 {
     width: 66.67%;
   }
@@ -183,6 +203,9 @@ img[alt]:not(.icon) {
   }
   .mid-4 {
     width: 33.33%;
+  }
+  .mid-3 {
+    width: 25%;
   }
   .mid-1 {
     width: 8.33%;
@@ -205,6 +228,9 @@ img[alt]:not(.icon) {
   .mida-12 {
     width: 100%;
   }
+  .mida-9 {
+    width: 75%;
+  }
   .mida-8 {
     width: 66.67%;
   }
@@ -219,6 +245,9 @@ img[alt]:not(.icon) {
   }
   .mida-4 {
     width: 33.33%;
+  }
+  .mida-3 {
+    width: 25%;
   }
   .mida-1 {
     width: 8.33%;

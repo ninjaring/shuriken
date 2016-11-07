@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@title, @name</title>
+    <link rel="stylesheet" href="res/gidole/gidoleregular.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/base.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <link rel="stylesheet" href="css/header.css" media="screen">
+    <link rel="stylesheet" href="css/footer.css" media="screen">
+    <link rel="stylesheet" href="css/basket.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <header id="hdr">
+      <div class="container">
+        <div class="row cf">
+          <div class="wide-7 mida-7 midb-12 narr-12 column" id="logo-hdr">
+            <img src="" alt="@name"/>
+          </div>
+          <div class="wide-4 mida-4 midb-12 narr-12 column" id="contact">
+            <div class="row">
+              <div class="column wide-12 mida-12 midb-6 narr-12" id="phone">
+                <p><a href="tel:@phone">@phone</a></p>
+              </div>
+              <div class="column wide-12 mida-12 midb-6 narr-12" id="addr">
+                <p><a href="@addrLink">@addr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="wide-1 mida-1 midb-hide narr-hide column" id="shortcut-area">
+            <div class="row cf">
+              <a class="icon" id="info" href="#">
+                <img class="icon icon24" src="" alt="info" />
+              </a>
+            </div>
+            <div class="row cf">
+              <a class="icon" id="instagram" href="@igLink">
+                <img class="icon icon24" src="" alt="ig" />
+              </a>
+            </div>
+            <div class="row cf">
+              <a class="icon" id="bag" href="#">
+                <img class="icon icon24" src="" alt="bag" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper" id="checkout">
+      <div class="container" id="basket">
+        <div class="row cf">
+          <div class="column wide-12 mida-12 narr-12" id="basketHead">
+            <h1 class="gd semibold">@keranjangHeadText</h1>
+          </div>
+        </div>
+        <div class="row cf">
+          <form class="" action="#" method="post">
+            <div class="column wide-3 mida-4 midb-6 narr-12">
+              <div class="addedItem">
+                <div class="row cf">
+                  <input class="addedName gd" id="" type="text" name="item" value="@namabarang" disabled />
+                </div>
+                <div class="row cf addedDesc">
+                  <img src="" alt="img" />
+                  <div>
+                    <input class="addedSize" type="text" name="ukuran" value="L" disabled />
+                    <input class="addedQuan" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
+                  </div>
+                </div>
+                <div class="row cf">
+                  <input class="addedSub semibold" type="text" name="priceSub" value="@sub">
+                </div>
+                <button class="remItem" type="button" name="remove item">x</button>
+              </div>
+            </div>
+            <div class="column wide-3 mida-4 midb-6 narr-12">
+              <div class="addedItem">
+                <div class="row cf">
+                  <input class="addedName gd" id="" type="text" name="item" value="@namabarang" disabled />
+                </div>
+                <div class="row cf addedDesc">
+                  <img src="" alt="img" />
+                  <div>
+                    <input class="addedSize" type="text" name="ukuran" value="L" disabled />
+                    <input class="addedQuan" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
+                  </div>
+                </div>
+                <div class="row cf">
+                  <input class="addedSub semibold" type="text" name="priceSub" value="@sub">
+                </div>
+                <button class="remItem" type="button" name="remove item">x</button>
+              </div>
+            </div>
+
+            <div class="column wide-12 mid-12 narr-12" id="nextToID">
+              <input type="submit" name="checkItem" value="Selanjutnya &#20;&rarr;"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+                <!-- <div class="column wide-4 mid-4 narr-4">
+                  <div class="row cf addedSize">
+
+                  </div>
+                  <div class="row cf addedQuan">
+
+                  </div>
+                </div> -->
+
+              <!-- <div class="row cf addedSub">
+
+              </div> -->
+
+        <!-- </div>
+        <div class="row cf">
+          <div class="column wide-12 mid-12 narr-12" id="nextToID">
+            <button type="button" name="button">Selanjutnya &#20;&rarr;</button>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container" id="steptwo">
+        <div class="row cf">
+          <div class="column wide-5 mida-5 midb-12 narr-12">
+          </div>
+          <div class="column wide-7 mida-7 midb-12 narr-12" id="customer">
+            <div class="row cf">
+              <div class="column wide-12 mid-12 narr-12" id="customerHead">
+                <h1 class="gd semibold">@customerHeadText</h1>
+              </div>
+            </div>
+            <div class="row cf">
+              <div class="column wide-12 mid-12 narr-12">
+                <form class="" action="success.html" method="post">
+                  <div class="inputid row cf">
+                    <div class="column lbel narr-12">
+                      <p>Nama</p>
+                    </div>
+                    <div class="column vlue narr-12">
+                      <input type="text"
+                      name="namaid"
+                      value=""
+                      placeholder="mis. Ayumi Hamazaki"
+                      title="Nama pemesan"
+                      autocomplete="on"
+                      required />
+                    </div>
+                  </div>
+
+                  <div class="inputid row cf">
+                    <div class="column lbel narr-12">
+                      <p>Alamat e-mail</p>
+                    </div>
+                    <div class="column vlue narr-12">
+                      <input type="email"
+                      name="emailid"
+                      value=""
+                      placeholder="mis. hello@hamazaki.com"
+                      title="Info pembayaran akan dikirim ke alamat ini"
+                      autocomplete="on"
+                      required />
+                    </div>
+                  </div>
+                  <div class="inputid row cf">
+                    <div class="column lbel narr-12">
+                      <p>No. HP</p>
+                    </div>
+                    <div class="column vlue narr-12">
+                      <input type="tel"
+                      maxlength="15"
+                      name="hpid"
+                      value=""
+                      placeholder="mis. 0811222333"
+                      title="Nomor ponsel"
+                      autocomplete="on"
+                      required />
+                    </div>
+                  </div>
+                  <div class="inputid row cf">
+                    <div class="column lbel narr-12">
+                      <p>Alamat</p>
+                    </div>
+                    <div class="column vlue narr-12">
+                      <textarea name="alamatid"
+                      rows="4"
+                      placeholder="mis. Jalan Affandi 799 Gejayan, Sleman 55281"
+                      title="Alamat pengiriman"
+                      autocomplete="on"
+                      required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="inputid row cf">
+                    <input id="kirimID" type="submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="ftr">
+      <div class="container">
+        <div class="row cf">
+          <div class="column wide-12 mid-12 narr-12">
+            <div id="copyright">
+              <p>&copy; @current_year @name</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
