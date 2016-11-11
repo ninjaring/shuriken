@@ -64,76 +64,34 @@
         </div>
       </div>
 
-      <div class="container" id="stepsatu">
+      <div class="container" id="stepone">
         <div class="row cf">
           <div class="column wide-12 mid-12 narr-12">
-            <h2 class="gd semibold">@baskethead</h2>
+            <h2 class="gd semibold">@stepone</h2>
             <form class="" action="#" method="post">
               <div class="bskitem" id="">
                 <div class="row cf">
-                  <input class="bskname gd" type="text" name="item" value="@namabarang" disabled />
+                  <input class="bskname gd" type="text" name="item" value="" disabled />
                 </div>
                 <div class="row cf bskdesc">
                   <img src="" alt="img" />
                   <div>
                     <select class="bsksize" name="ukuran">
-                      <option value="s">S</option>
-                      <option value="m">M</option>
-                      <option value="l">L</option>
-                      <option value="xl">XL</option>
+                      <option value="@sa">@sa</option>
+                      <option value="@sb">@sb</option>
+                      <option value="@sc">@sc</option>
+                      <option value="@sd">@sd</option>
                     </select>
-                    <input class="bskamount" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
+                    <input class="bskamount" type="number" min="1" max="99" name="jumlah" value="" placeholder="?">
                   </div>
                 </div>
                 <div class="row cf">
-                  <input class="bsksub semibold" type="text" value="@sub" disabled />
-                </div>
-                <button class="bskrem" type="button" name="remove item">x</button>
-              </div>
-              <div class="bskitem" id="">
-                <div class="row cf">
-                  <input class="bskname gd" type="text" name="item" value="@namabarang" disabled />
-                </div>
-                <div class="row cf bskdesc">
-                  <img src="" alt="img" />
-                  <div>
-                    <select class="bsksize" name="ukuran">
-                      <option value="s">S</option>
-                      <option value="m">M</option>
-                      <option value="l">L</option>
-                      <option value="xl">XL</option>
-                    </select>
-                    <input class="bskamount" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
-                  </div>
-                </div>
-                <div class="row cf">
-                  <input class="bsksub semibold" type="text" value="@sub" disabled />
-                </div>
-                <button class="bskrem" type="button" name="remove item">x</button>
-              </div>
-              <div class="bskitem" id="">
-                <div class="row cf">
-                  <input class="bskname gd" type="text" name="item" value="@namabarang" disabled />
-                </div>
-                <div class="row cf bskdesc">
-                  <img src="" alt="img" />
-                  <div>
-                    <select class="bsksize" name="ukuran">
-                      <option value="s">S</option>
-                      <option value="m">M</option>
-                      <option value="l">L</option>
-                      <option value="xl">XL</option>
-                    </select>
-                    <input class="bskamount" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
-                  </div>
-                </div>
-                <div class="row cf">
-                  <input class="bsksub semibold" type="text" value="@sub" disabled />
+                  <input class="bsksub semibold" type="text" value="" disabled />
                 </div>
                 <button class="bskrem" type="button" name="remove item">x</button>
               </div>
               <div class="cf" id="nexttwo">
-                <input type="submit" value="Lanjut &#20;&rarr;" tabindex="1"></button>
+                <input type="submit" value="@nexttwo" tabindex="1"></button>
               </div>
             </form>
 
@@ -146,21 +104,21 @@
       <div class="container" id="steptwo">
         <div class="row cf">
           <div class="column wide-12 mid-12 narr-12">
-            <h2 class="gd semibold">@formhead</h2>
+            <h2 class="gd semibold">@steptwo</h2>
             <form class="" action="confirm.html" method="post">
               <ul>
-                <li><label for="name">Nama</label>
-                <input id="name" type="text" name="name" placeholder="John" tabindex="1" required></li>
-                <li><label for="emailaddr">Email</label>
-                <input id="emailaddr" type="email" name="email address" placeholder="hello@john.com" tabindex="2" required></li>
-                <li><label for="phone">Telepon</label>
-                <input id="phone" type="tel" name="phone" placeholder="0812223334" tabindex="3" required></li>
-                <li><label for="shipaddr">Alamat</label>
-                <textarea id="shipaddr" rows="4" name="ship address" placeholder="Jalan Anggrek 99 Maguwoharjo Sleman 55283" tabindex="4"  required></textarea></li>
+                <li><label for="name">@flname</label>
+                <input id="name" type="text" name="name" placeholder="@fpname" tabindex="1" required></li>
+                <li><label for="emailaddr">@flem</label>
+                <input id="emailaddr" type="email" name="email address" placeholder="@fpem" tabindex="2" required></li>
+                <li><label for="phone">@flph</label>
+                <input id="phone" type="tel" name="phone" placeholder="@fpph" tabindex="3" required></li>
+                <li><label for="shipaddr">@fladdr</label>
+                <textarea id="shipaddr" rows="4" name="ship address" placeholder="@fpaddr" tabindex="4"  required></textarea></li>
               </ul>
               <li id="twoaction">
-                <a id="backone" href="#" tabindex="6">&larr;&nbsp;Kembali</a>
-                <input id="nextfinal" type="submit" value="Lanjut &nbsp;&rarr;" tabindex="5" />
+                <a id="backone" href="#" tabindex="6">@backone</a>
+                <input id="nextfinal" type="submit" value="@nextfinal" tabindex="5" />
               </li>
             </form>
           </div>
@@ -170,8 +128,8 @@
       <div class="container" id="stepfinal">
         <div class="row cf">
           <div class="column wide-5 mida-5 midb-12 narr-12">
-            <div id="bsketsmry">
-              <h2 class="gd semibold">Keranjang</h2>
+            <div id="bsksmry">
+              <h2 class="gd semibold">@bsksmry</h2>
               <table>
                 <tbody>
                   <tr>
@@ -186,7 +144,7 @@
                     <td>1</td>
                     <td>Rp 130.000,-</td>
                   </tr>
-                  <tr class="bordertop" id="subtotal">
+                  <tr class="bordertop paddingtop" id="subtotal">
                     <td>Subtotal</td>
                     <td></td>
                     <td></td>
@@ -198,24 +156,24 @@
           </div>
           <div class="column wide-7 mida-7 midb-12 narr-12">
             <div id="shipsmry">
-              <h2 class="gd semibold">Pemesan</h2>
+              <h2 class="gd semibold">@shipsmry</h2>
               <table>
                 <tbody>
                   <tr>
-                    <td>Nama</td>
-                    <td>@custname</td>
+                    <td>@cnlab</td>
+                    <td id="custname">@custname</td>
                   </tr>
                   <tr>
-                    <td>Email</td>
-                    <td>@custemail</td>
+                    <td>@celab</td>
+                    <td id="custemail">@custemail</td>
                   </tr>
                   <tr>
-                    <td>Telepon</td>
-                    <td>@custphone</td>
+                    <td>@cplab</td>
+                    <td id="custphone">@custphone</td>
                   </tr>
                   <tr>
-                    <td>Alamat pengiriman</td>
-                    <td>@custaddress</td>
+                    <td>@cadlab</td>
+                    <td id="custaddr">@custaddr</td>
                   </tr>
                 </tbody>
               </table>
@@ -224,18 +182,18 @@
         </div>
         <div class="row cf">
           <div class="column wide-12 mid-12 narr-12">
-            <div>
-              <p id="askforsubmit">Apakah data ini sudah benar?</p>
+            <div id="askforsubmit">
+              <p class="">@askforsubmit</p>
             </div>
             <div id="submitnow">
-              <p>Sudah,</p>
-              <a href="#" tabindex="1">&nbsp;kirim&nbsp;</a>
-              <p>pesanan sekarang</p>
+              <p>@ya</p>
+              <a href="#" tabindex="1">@yb</a>
+              <p>@yc</p>
             </div>
             <div id="notyet">
-              <p>Belum,</p>
-              <a href="" tabindex="2">&nbsp;kembali&nbsp; </a>
-              <p>untuk mengganti data</p>
+              <p>@na</p>
+              <a href="" tabindex="2">@nb</a>
+              <p>@nc</p>
             </div>
           </div>
         </div>
