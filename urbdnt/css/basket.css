@@ -3,7 +3,7 @@
 }
 
 div.container#stepsatu {
-  display: none;
+  display: block;
 }
 
 div.container#steptwo {
