@@ -52,158 +52,195 @@
     </header>
 
     <div class="wrapper" id="checkout">
-      <div class="container" id="basket">
+      <div class="container" id="still">
         <div class="row cf">
-          <div class="column wide-12 mida-12 narr-12" id="basketHead">
-            <h1 class="gd semibold">@keranjangHeadText</h1>
+          <div class="column wide-12 mid-12 narr-12">
+            <ul id="progressbar">
+              <li class="active"></li>
+              <li class="active"></li>
+              <li></li>
+            </ul>
           </div>
-        </div>
-        <div class="row cf">
-          <form class="" action="#" method="post">
-            <div class="column wide-3 mida-4 midb-6 narr-12">
-              <div class="addedItem">
-                <div class="row cf">
-                  <input class="addedName gd" id="" type="text" name="item" value="@namabarang" disabled />
-                </div>
-                <div class="row cf addedDesc">
-                  <img src="" alt="img" />
-                  <div>
-                    <input class="addedSize" type="text" name="ukuran" value="L" disabled />
-                    <input class="addedQuan" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
-                  </div>
-                </div>
-                <div class="row cf">
-                  <input class="addedSub semibold" type="text" name="priceSub" value="@sub">
-                </div>
-                <button class="remItem" type="button" name="remove item">x</button>
-              </div>
-            </div>
-            <div class="column wide-3 mida-4 midb-6 narr-12">
-              <div class="addedItem">
-                <div class="row cf">
-                  <input class="addedName gd" id="" type="text" name="item" value="@namabarang" disabled />
-                </div>
-                <div class="row cf addedDesc">
-                  <img src="" alt="img" />
-                  <div>
-                    <input class="addedSize" type="text" name="ukuran" value="L" disabled />
-                    <input class="addedQuan" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
-                  </div>
-                </div>
-                <div class="row cf">
-                  <input class="addedSub semibold" type="text" name="priceSub" value="@sub">
-                </div>
-                <button class="remItem" type="button" name="remove item">x</button>
-              </div>
-            </div>
-
-            <div class="column wide-12 mid-12 narr-12" id="nextToID">
-              <input type="submit" name="checkItem" value="Selanjutnya &#20;&rarr;"></button>
-            </div>
-          </form>
         </div>
       </div>
 
-                <!-- <div class="column wide-4 mid-4 narr-4">
-                  <div class="row cf addedSize">
-
-                  </div>
-                  <div class="row cf addedQuan">
-
-                  </div>
-                </div> -->
-
-              <!-- <div class="row cf addedSub">
-
-              </div> -->
-
-        <!-- </div>
+      <div class="container" id="stepsatu">
         <div class="row cf">
-          <div class="column wide-12 mid-12 narr-12" id="nextToID">
-            <button type="button" name="button">Selanjutnya &#20;&rarr;</button>
+          <div class="column wide-12 mid-12 narr-12">
+            <h2 class="gd semibold">@baskethead</h2>
+            <form class="" action="#" method="post">
+              <div class="bskitem" id="">
+                <div class="row cf">
+                  <input class="bskname gd" type="text" name="item" value="@namabarang" disabled />
+                </div>
+                <div class="row cf bskdesc">
+                  <img src="" alt="img" />
+                  <div>
+                    <select class="bsksize" name="ukuran">
+                      <option value="s">S</option>
+                      <option value="m">M</option>
+                      <option value="l">L</option>
+                      <option value="xl">XL</option>
+                    </select>
+                    <input class="bskamount" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
+                  </div>
+                </div>
+                <div class="row cf">
+                  <input class="bsksub semibold" type="text" value="@sub" disabled />
+                </div>
+                <button class="bskrem" type="button" name="remove item">x</button>
+              </div>
+              <div class="bskitem" id="">
+                <div class="row cf">
+                  <input class="bskname gd" type="text" name="item" value="@namabarang" disabled />
+                </div>
+                <div class="row cf bskdesc">
+                  <img src="" alt="img" />
+                  <div>
+                    <select class="bsksize" name="ukuran">
+                      <option value="s">S</option>
+                      <option value="m">M</option>
+                      <option value="l">L</option>
+                      <option value="xl">XL</option>
+                    </select>
+                    <input class="bskamount" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
+                  </div>
+                </div>
+                <div class="row cf">
+                  <input class="bsksub semibold" type="text" value="@sub" disabled />
+                </div>
+                <button class="bskrem" type="button" name="remove item">x</button>
+              </div>
+              <div class="bskitem" id="">
+                <div class="row cf">
+                  <input class="bskname gd" type="text" name="item" value="@namabarang" disabled />
+                </div>
+                <div class="row cf bskdesc">
+                  <img src="" alt="img" />
+                  <div>
+                    <select class="bsksize" name="ukuran">
+                      <option value="s">S</option>
+                      <option value="m">M</option>
+                      <option value="l">L</option>
+                      <option value="xl">XL</option>
+                    </select>
+                    <input class="bskamount" type="number" min="1" max="99" name="jumlah" value="" placeholder="q">
+                  </div>
+                </div>
+                <div class="row cf">
+                  <input class="bsksub semibold" type="text" value="@sub" disabled />
+                </div>
+                <button class="bskrem" type="button" name="remove item">x</button>
+              </div>
+              <div class="cf" id="nexttwo">
+                <input type="submit" value="Lanjut &#20;&rarr;" tabindex="1"></button>
+              </div>
+            </form>
+
           </div>
+
         </div>
-      </div> -->
+
+      </div>
 
       <div class="container" id="steptwo">
         <div class="row cf">
-          <div class="column wide-5 mida-5 midb-12 narr-12">
+          <div class="column wide-12 mid-12 narr-12">
+            <h2 class="gd semibold">@formhead</h2>
+            <form class="" action="confirm.html" method="post">
+              <ul>
+                <li><label for="name">Nama</label>
+                <input id="name" type="text" name="name" placeholder="John" tabindex="1" required></li>
+                <li><label for="emailaddr">Email</label>
+                <input id="emailaddr" type="email" name="email address" placeholder="hello@john.com" tabindex="2" required></li>
+                <li><label for="phone">Telepon</label>
+                <input id="phone" type="tel" name="phone" placeholder="0812223334" tabindex="3" required></li>
+                <li><label for="shipaddr">Alamat</label>
+                <textarea id="shipaddr" rows="4" name="ship address" placeholder="Jalan Anggrek 99 Maguwoharjo Sleman 55283" tabindex="4"  required></textarea></li>
+              </ul>
+              <li id="twoaction">
+                <a id="backone" href="#" tabindex="6">&larr;&nbsp;Kembali</a>
+                <input id="nextfinal" type="submit" value="Lanjut &nbsp;&rarr;" tabindex="5" />
+              </li>
+            </form>
           </div>
-          <div class="column wide-7 mida-7 midb-12 narr-12" id="customer">
-            <div class="row cf">
-              <div class="column wide-12 mid-12 narr-12" id="customerHead">
-                <h1 class="gd semibold">@customerHeadText</h1>
-              </div>
-            </div>
-            <div class="row cf">
-              <div class="column wide-12 mid-12 narr-12">
-                <form class="" action="success.html" method="post">
-                  <div class="inputid row cf">
-                    <div class="column lbel narr-12">
-                      <p>Nama</p>
-                    </div>
-                    <div class="column vlue narr-12">
-                      <input type="text"
-                      name="namaid"
-                      value=""
-                      placeholder="mis. Ayumi Hamazaki"
-                      title="Nama pemesan"
-                      autocomplete="on"
-                      required />
-                    </div>
-                  </div>
+        </div>
+      </div>
 
-                  <div class="inputid row cf">
-                    <div class="column lbel narr-12">
-                      <p>Alamat e-mail</p>
-                    </div>
-                    <div class="column vlue narr-12">
-                      <input type="email"
-                      name="emailid"
-                      value=""
-                      placeholder="mis. hello@hamazaki.com"
-                      title="Info pembayaran akan dikirim ke alamat ini"
-                      autocomplete="on"
-                      required />
-                    </div>
-                  </div>
-                  <div class="inputid row cf">
-                    <div class="column lbel narr-12">
-                      <p>No. HP</p>
-                    </div>
-                    <div class="column vlue narr-12">
-                      <input type="tel"
-                      maxlength="15"
-                      name="hpid"
-                      value=""
-                      placeholder="mis. 0811222333"
-                      title="Nomor ponsel"
-                      autocomplete="on"
-                      required />
-                    </div>
-                  </div>
-                  <div class="inputid row cf">
-                    <div class="column lbel narr-12">
-                      <p>Alamat</p>
-                    </div>
-                    <div class="column vlue narr-12">
-                      <textarea name="alamatid"
-                      rows="4"
-                      placeholder="mis. Jalan Affandi 799 Gejayan, Sleman 55281"
-                      title="Alamat pengiriman"
-                      autocomplete="on"
-                      required=""></textarea>
-                    </div>
-                  </div>
-                  <div class="inputid row cf">
-                    <input id="kirimID" type="submit" />
-                  </div>
-                </form>
-              </div>
+      <div class="container" id="stepfinal">
+        <div class="row cf">
+          <div class="column wide-5 mida-5 midb-12 narr-12">
+            <div id="bsketsmry">
+              <h2 class="gd semibold">Keranjang</h2>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Nama Item 1</td>
+                    <td>L</td>
+                    <td>2</td>
+                    <td>Rp 260.000,-</td>
+                  </tr>
+                  <tr>
+                    <td>Nama Item 1</td>
+                    <td>L</td>
+                    <td>1</td>
+                    <td>Rp 130.000,-</td>
+                  </tr>
+                  <tr class="bordertop" id="subtotal">
+                    <td>Subtotal</td>
+                    <td></td>
+                    <td></td>
+                    <td>Rp 390.000,-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="column wide-7 mida-7 midb-12 narr-12">
+            <div id="shipsmry">
+              <h2 class="gd semibold">Pemesan</h2>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Nama</td>
+                    <td>@custname</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>@custemail</td>
+                  </tr>
+                  <tr>
+                    <td>Telepon</td>
+                    <td>@custphone</td>
+                  </tr>
+                  <tr>
+                    <td>Alamat pengiriman</td>
+                    <td>@custaddress</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row cf">
+          <div class="column wide-12 mid-12 narr-12">
+            <div>
+              <p id="askforsubmit">Apakah data ini sudah benar?</p>
+            </div>
+            <div id="submitnow">
+              <p>Sudah,</p>
+              <a href="#" tabindex="1">&nbsp;kirim&nbsp;</a>
+              <p>pesanan sekarang</p>
+            </div>
+            <div id="notyet">
+              <p>Belum,</p>
+              <a href="" tabindex="2">&nbsp;kembali&nbsp; </a>
+              <p>untuk mengganti data</p>
             </div>
           </div>
         </div>
       </div>
+
     </div>
 
     <footer id="ftr">
