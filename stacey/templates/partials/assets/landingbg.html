@@ -1,0 +1,7 @@
+{% for image in slice(page.images, 0,4) %}
+  <div class="cell bgimg c6x6">
+    <div class="imgwrapper desaturate">
+      <img class="coverbig" src="{{ image.url }}" alt="{{ image.title }}" />
+    </div>
+  </div>
+{% endfor %}

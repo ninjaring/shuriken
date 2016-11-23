@@ -1,0 +1,97 @@
+/* HEADER */
+#hdr {
+  background-color: #000;
+  overflow: auto;
+  margin: 0;
+}
+#hdr .container {
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#hdr p {
+-webkit-margin-before: 0em;
+-webkit-margin-after: .75em;
+-webkit-margin-start: 15px;
+-webkit-margin-end: 0px;
+}
+#logo-hdr img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  max-height: 80px;
+}
+#shortcut img {
+  float: right;
+  margin-bottom: 0.5em;
+}
+/* wide devices only - green */
+@media (min-width: 961px) {
+  #hdr .container {
+    height: 130px;
+  }
+  #logo-hdr img {
+    height: 80px;
+    width: 410px;
+  }
+}
+/** mid A -
+ * header logo breakpoint
+ */
+@media (min-width: 662px) and (max-width: 960px) {
+  #hdr .container {
+    height: 130px;
+  }
+  #logo-hdr img {
+    max-width: 410px;
+    width: 75%;
+  }
+}
+/** mid B -
+ * header logo breakpoint
+ */
+@media (min-width: 481px) and (max-width: 661px) {
+  #hdr .container {
+    height: 140px;
+  }
+  #logo-hdr img {
+    display: block;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contact p {
+    padding: 0 10px 0;
+  }
+  #phone p {
+    text-align: right;
+  }
+  #addr p {
+    text-align: left;
+  }
+}
+/* narrow devices only */
+@media (min-width: 320px) and (max-width: 480px) {
+  #hdr .container {
+    height: 150px;
+  }
+  #logo-hdr img {
+    display: block;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contact p {
+    text-align: center;
+  }
+}
+/*FOOTER*/
+#ftr .container {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+#copyright {
+  text-align: center;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.8);
+}

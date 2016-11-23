@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.name }}</title>
+    <link rel="stylesheet" href="{{ page.root_path }}/public/docs/css/base.css" media="screen">
+    <link rel="stylesheet" href="{{ page.root_path }}/public/docs/css/index.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        {% include 'partials/assets/landingbg.html' %}
+        <div class="fadeInUp" id="focusbox">
+          <div class="row semibold">
+            <p>{{ page.landinghead }}</p>
+          </div>
+          <div class="row">
+            <h1>{{ page.landingsub }}</h1>
+          </div>
+          <div class="row">
+            <a class="btn semibold" id="gotoshop" href="{{ page.actdestination }}/">{{ page.landingact }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

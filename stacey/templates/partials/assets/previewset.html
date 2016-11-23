@@ -1,0 +1,3 @@
+{% for image in page.previewset %}
+  <img class="single-thumbnail" id="{{ image.name|trim }}" src="{{ image.url }}" alt="thumb" >
+{% endfor %}
