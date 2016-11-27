@@ -1,3 +1,17 @@
+function thumbmarker(x) {
+  if (x = 'x')
+    x = document.getElementsByClassName('iis-current-slide')[0].getAttribute('id').slice(3);
+  var thumbs = document.getElementsByClassName('single-thumbnail');
+  for (var i = 0; i < thumbs.length; i++) {
+    if (i+1 == x) {
+      thumbs[i].setAttribute('style', 'border-color: #000000;');
+    }
+    else {
+      thumbs[i].setAttribute('style','border-color: transparent;')
+    }
+  }
+}
+
 var slider = new IdealImageSlider.Slider({
     selector: '#slidewrapper',
     height: 405,
@@ -8,23 +22,15 @@ var slider = new IdealImageSlider.Slider({
     disableNav: false,
     keyboardNav: true,
     onInit: function(){
-      console.log('onInit');
-    },
-    onStart: function(){
-      console.log('onStart');
-    },
-    onStop: function(){
-      console.log('onStop');
-    },
-    onDestroy: function(){
-      console.log('onDestroy');
-    },
-    beforeChange: function(){
-      console.log('beforeChange');
+      thumbmarker('x');
     },
     afterChange: function(){
-      console.log('afterChange');
+      thumbmarker('x');
     },
 });
-slider.addThumbNav();
 slider.start();
+
+function slideto(x) {
+  slider.gotoSlide(x);
+  thumbmarker(x);
+}

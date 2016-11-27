@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.page_name }} {{ page.name }}</title>
+    <link rel="stylesheet" href="{{ page.root_path }}public/docs/css/base.css" media="screen">
+    <link rel="stylesheet" href="{{ page.root_path }}public/docs/css/main.css" media="screen">
+    <link rel="stylesheet" href="{{ page.root_path }}public/docs/css/hefo.css" media="screen">
+    <link rel="stylesheet" href="{{ page.root_path }}public/docs/css/single.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    {% include 'partials/header.html' %}
+    <hr class="short">
+    <div class="wrapper" id="single">
+      <div class="container" id="{{ page.productid }}">
+        <!-- nama produk bagian atas -->
+        <!-- <div class="row cf" id="item-head">
+          <div class="column gd wide-12 mid-12 narr-12">
+            <h1>{{ page.productname }}</h1>
+          </div>
+        </div> -->
+        <div class="row cf" id="item-body">
+          <div class="column wide-8 mida-8 midb-12 narr-12" id="gallery">
+            {% include 'partials/assets/previews.html' %}
+            <div id="thumbnails-set">
+              <div id="pthumbs">
+                {% include 'partials/assets/pthumbs.html' %}
+              </div>
+            </div>
+          </div>
+          <div class="column wide-4 mida-4 midb-12 narr-12" id="item-info">
+            <div class="row cf gd" id="item-head">
+                <h1>{{ page.productname }}</h1>
+            </div>
+            <div class="row cf gd" id="price">
+              <p>{{ page.price }}<p>
+                <p id="slicetest">
+                </p>
+            </div>
+            <div class="row cf" id="description">
+              <p>{{ page.description }}</p>
+            </div>
+            <div class="row cf">
+              <div class="label column" id="colorlabel">
+                <p>{{ page.colorlb }}</p>
+              </div>
+              <div class="value column" id="colorvalue">
+                <p>{{ page.colorvl }}</p>
+              </div>
+            </div>
+            <div class="row cf">
+              <div class="label column" id="stocklabel">
+                <p>{{ page.stocklb }}</p>
+              </div>
+              <div class="value column" id="stockvalue">
+                <p>{{ page.stockvl }}</p>
+              </div>
+            </div>
+            <div class="row cf" id="orderarea">
+              <div class="label column" id="sizelabel">
+                <p>{{ page.sizelb }}</p>
+              </div>
+              <div class="column notes" id="sizeinfo">
+                <a href="{{ page.sizeinfourl }}">{{ page.sizeinfotxt}}</a>
+              </div>
+              <div class="column wide-12 mid-12 narr-12" id="sizepick">
+                <button class="btn size-box" onclick="">
+                  {{page.sizevl[0]}}</button>
+                <button class="btn size-box" onclick="">
+                  {{page.sizevl[1]}}</button>
+                <button class="btn size-box" onclick="">
+                  {{page.sizevl[2]}}</button>
+                <button class="btn size-box" onclick="slicetest()">
+                  {{page.sizevl[3]}}</button>
+              </div>
+              <div class="label column" id="qtlabel">
+                <p>{{page.qtlb}}</p>
+              </div>
+              <div class="value column" id="qtvalue">
+                <input type="number" min="1" max="99" name="jumlah" placeholder="1+" autocomplete="off" value="" required>
+              </div>
+            </div>
+            <div class="row cf notes">
+              <p id="xtranotes">{{ page.xtranotes }}</p>
+            </div>
+            <div class="row cf">
+              <div class="column wide-12 mid-12 narr-12">
+                <p id="alertxt"></p>
+              </div>
+              <div class="column wide-12 mid-12 narr-12" id="action">
+                <button class="btn semibold" type="button" name="add-to-bag">{{ page.acttxt }}
+                  <!-- <object type="image/svg+xml" data="{{ page.root_path }}public/images/bag.svg"></object> -->
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="tall">
+      <div class="container" id="itemnav">
+        <div class="row cf">
+          <div class="column wide-12 mid-12 narr-12 navwrap">
+            {% if page.siblings %}
+              {% include 'partials/previous-page.html' %}
+              {% include 'partials/parent-page.html' %}
+              {% include 'partials/next-page.html' %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="row cf">
+          <div class="column wide-12 mid-12 narr-12 navwrap">
+            <button class="btn wide-hide mid-hide" id="allitemsplus" type="button" name="all items">{{ page.hometxt }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="tall">
+    {% include 'partials/footer.html' %}
+    <script src="{{ page.root_path }}public/docs/js/ideal-image-slider.min.js"></script>
+    <script src="{{ page.root_path }}public/docs/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<div id="previews">
+  <div id="slidewrapper">
+    {% for image in slice(page.previews, 0,1) %}
+      <img class="cover imgmain" id="{{ image.name|lower }}" src="{{ image.url }}" alt="{{ image.title }}" >
+    {% endfor %}
+    {% for image in slice(page.previews, 1) %}
+      <img class="cover imgmain" id="{{ image.name|lower }}" data-src="{{ image.url }}" src="" alt="{{ image.title }}" >
+    {% endfor %}
+  </div>
+</div>

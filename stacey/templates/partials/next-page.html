@@ -1,3 +1,7 @@
-{% for sibling in page.next_sibling %}
-  <p><a href="{{ sibling.url }}">Next project</a>: &rarr; {{ sibling.title }}</p>
-{% endfor %}
+{% if page.is_last %}
+  <p>&nbsp;</p>
+{% else %}
+  {% for sibling in page.next_sibling %}
+    <a href="{{ sibling.url }}" class="btn" id="nextitem" title="{{ sibling.productname }}">{{ page.nexttxt }}</a>
+  {% endfor %}
+{% endif %}

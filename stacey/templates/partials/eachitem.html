@@ -1,0 +1,14 @@
+{% if page.children %}
+  {% for child in page.children %}
+    <div class="column wide-4 mida-4 midb-6 narr-12 eachitem" id="{{ child.productid }}">
+      <div class="imgwrapper">
+        <a class="imgall" href="{{ child.url }}">
+          <img class="contain" src="{{ child.thumb.url }}" alt="{{ child.slug }}"/>
+          <div class="itemtitle">
+            <p class="semibold">{{ child.page_name }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}

@@ -1,0 +1,3 @@
+{% for parent in page.parent %}
+  <a href="{{ parent.url }}" class="btn narr-hide" id="allitems" title="{{ parent.headtxt }}">{{ page.hometxt }}</a>
+{% endfor %}
